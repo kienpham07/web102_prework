@@ -19,6 +19,64 @@ body {
   margin-top: -10px;
 }
 
+.search-wrapper {
+  margin-left: auto;
+  margin-right: 8rem;
+  position: relative;
+}
+
+#search-input {
+  width: 300px;
+  padding: 0.6rem 0.8rem 0.6rem 2.6rem;
+  border-radius: 12px;
+  border: 2px solid rgba(255,255,255,0.9);
+  outline: none;
+  font-size: 16px;
+}
+
+.search-btn {
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  transform: translateY(-60%);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: default;
+}
+.search-btn svg { display: block; }
+
+.suggestions {
+  position: absolute;
+  right: 0;
+  top: calc(100% + 8px);
+  width: 100%;
+  max-height: 220px;
+  overflow-y: auto;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  list-style: none;
+  padding: 6px 0;
+  margin: 0;
+  z-index: 50;
+}
+
+.suggestions li {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.suggestions li:hover,
+.suggestions li.active {
+  background: #f0f6fb;
+}
+
 .stats-container {
   display: flex;
   align-items: center;
